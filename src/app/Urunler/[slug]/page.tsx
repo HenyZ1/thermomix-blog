@@ -97,7 +97,7 @@ export default async function ProductDetailPage({ params }: Params) {
             {/* Hızlı İletişim Butonları */}
             <div className="d-grid gap-3 d-md-flex mb-4">
               <Button 
-                href="/https://wa.me/905062940969?text=Merhaba,%20ürüni%20satınk%20almak%20istiyorum" 
+                href="https://wa.me/905062940969?text=Merhaba,%20Ürün%20satın%20almak%20istiyorum" 
                 variant="success" 
                 className="px-4 py-2 fw-bold rounded-pill"
                 size="lg"
