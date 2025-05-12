@@ -21,7 +21,7 @@ export default function Footer() {
               </p>
             </Col>
             <Col lg={5} className="text-lg-end">
-              <a href="/iletisim" className="btn btn-primary btn-hover-lift py-2 px-4 rounded-pill">
+              <a href="https://wa.me/905062940969?text=Merhaba,%20bilgi%20almak%20istiyorum" className="btn btn-primary btn-hover-lift py-2 px-4 rounded-pill">
                 <i className="bi bi-whatsapp me-2"></i>
                 Hemen Bilgi Alın
               </a>
@@ -43,7 +43,7 @@ export default function Footer() {
             </p>
             
             <div className="d-flex gap-3 mb-3">
-              <a href="#" className="btn-hover-lift" style={{
+              <a target='blank' href="https://wa.me/905062940969?text=Merhaba,%20Thermomix%20hakkında%20bilgi%20almak%20istiyorum." className="btn-hover-lift" style={{
                 width: '36px', 
                 height: '36px', 
                 borderRadius: '50%', 
@@ -53,9 +53,9 @@ export default function Footer() {
                 justifyContent: 'center',
                 color: 'white'
               }}>
-                <i className="bi bi-facebook"></i>
+                <i className="bi bi-whatsapp"></i>
               </a>
-              <a href="#" className="btn-hover-lift" style={{
+              <a target='blank' href="https://www.instagram.com/aysenn_ylmazz/" className="btn-hover-lift" style={{
                 width: '36px', 
                 height: '36px', 
                 borderRadius: '50%', 
@@ -66,18 +66,6 @@ export default function Footer() {
                 color: 'white'
               }}>
                 <i className="bi bi-instagram"></i>
-              </a>
-              <a href="#" className="btn-hover-lift" style={{
-                width: '36px', 
-                height: '36px', 
-                borderRadius: '50%', 
-                background: 'linear-gradient(135deg, #16a34a, #15803d)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: 'white'
-              }}>
-                <i className="bi bi-twitter"></i>
               </a>
             </div>
           </Col>
@@ -98,7 +86,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="mb-3">
-                <Link href="/blog" className="d-flex align-items-center text-decoration-none btn-hover-lift">
+                <Link href="/Blog" className="d-flex align-items-center text-decoration-none btn-hover-lift">
                   <i className="bi bi-chevron-right text-primary me-2"></i>
                   <span>Blog</span>
                 </Link>
@@ -130,13 +118,14 @@ export default function Footer() {
               <div className="feature-icon bg-gradient-primary text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style={{width: '40px', height: '40px', minWidth: '40px'}}>
                 <i className="bi bi-envelope"></i>
               </div>
-              <span>bahadrefeylmaz@gmail.com</span>
+              <span>bahadrefeylmaz4@gmail.com</span>
             </div>
           </Col>
         </Row>
         
         <div className="text-center mt-5 pt-4 border-top">
           <p className="mb-0">&copy; {new Date().getFullYear()} Thermomix Türkiye. Tüm hakları saklıdır.</p>
+          <p className="mb-0 ">Designed By <a target='blank' className='text-primary' href="https://www.linkedin.com/in/bahad%C4%B1r-y%C4%B1lmaz-a45851222/">Bahadır Efe Yılmaz</a></p> 
         </div>
       </Container>
     </footer>

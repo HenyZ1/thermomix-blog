@@ -36,7 +36,7 @@ export default async function Home() {
                 </p>
                 <div className="d-flex flex-wrap gap-3 mt-4">
                   <Button 
-                    href="/Ürünler" 
+                    href="/Urunler" 
                     variant="primary" 
                     size="lg"
                     className="fw-semibold px-4 py-3 rounded-pill btn-hover-lift"
@@ -249,7 +249,7 @@ export default async function Home() {
               <h2 className="display-5 fw-bold mb-3 text-gradient">Thermomix'i Keşfetmeye Hazır mısınız?</h2>
               <p className="lead mb-4">Bir Thermomix uzmanıyla görüşün ve tüm sorularınızı yanıtlayalım.</p>
               <Button 
-                href="/İletişim" 
+                href="/iletisim" 
                 variant="light" 
                 size="lg" 
                 className="rounded-pill fw-bold px-5 py-3 btn-hover-lift"

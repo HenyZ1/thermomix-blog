@@ -17,6 +17,7 @@ export default async function BlogPage() {
         <p className="lead text-muted mx-auto" style={{ maxWidth: '700px' }}>
           Thermomix ile mutfaktaki yolculuğunuzu kolaylaştıracak ipuçları, tarifler ve ilham verici içerikler.
         </p>
+        <hr />
       </div>
 
       {posts.length > 0 ? (

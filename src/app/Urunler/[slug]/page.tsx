@@ -43,7 +43,7 @@ export default async function ProductDetailPage({ params }: Params) {
   
   return (
     <>
-      <Row className="mb-5">
+      <Row className="product_title_top">
         {/* Ürün Görselleri */}
         <Col lg={6} className="mb-4 mb-lg-0">
           {/* Ana Görsel */}
@@ -97,7 +97,7 @@ export default async function ProductDetailPage({ params }: Params) {
             {/* Hızlı İletişim Butonları */}
             <div className="d-grid gap-3 d-md-flex mb-4">
               <Button 
-                href="/Iletisim?subject=purchase" 
+                href="/https://wa.me/905062940969?text=Merhaba,%20ürüni%20satınk%20almak%20istiyorum" 
                 variant="success" 
                 className="px-4 py-2 fw-bold rounded-pill"
                 size="lg"
@@ -156,14 +156,14 @@ export default async function ProductDetailPage({ params }: Params) {
       </Row>
       
       {/* Sipariş CTA */}
-      <div className="mt-5 mb-4 glass-card cta-card p-5 text-center">
+      <div className="mt-5 mb-4 glass-card cta-card p-5 text-center ">
         <h2 className="fw-bold mb-3">Sipariş Vermek İçin Hemen İletişime Geçin</h2>
         <p className="mb-4 mx-auto text-muted" style={{ maxWidth: '700px' }}>
           Thermomix ürünleri hakkında daha fazla bilgi almak ve sipariş vermek için müşteri temsilcilerimizle iletişime geçebilirsiniz.
         </p>
         <div className="d-flex flex-column flex-md-row justify-content-center gap-3">
           <Button 
-            href="/Iletisim" 
+            href="/iletisim" 
             variant="success" 
             size="lg"
             className="fw-bold px-4 py-3 rounded-pill"
@@ -175,7 +175,7 @@ export default async function ProductDetailPage({ params }: Params) {
             href={`tel:+905062940969`} 
             variant="outline-success" 
             size="lg"
-            className="px-4 py-3 rounded-pill d-flex align-items-center justify-content-center"
+            className="px-4 py-3 rounded-pill d-flex align-items-center justify-content-center text-light"
           >
             <i className="bi bi-telephone-fill me-2"></i>
             +90 506 294 0969

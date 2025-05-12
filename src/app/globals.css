@@ -454,6 +454,7 @@ a {
   z-index: 1;
 }
 
+
 .cta-card::before {
   content: '';
   position: absolute;
@@ -1003,4 +1004,171 @@ a {
   border-radius: 12px;
   border: 1px solid rgba(238, 238, 238, 0.3);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+
+.product_title_top {
+  margin-top: 140px;
+}
+
+
+/* İletişim Sayfası Stilleri */
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(25, 135, 84, 0.1);
+  font-size: 1.5rem;
+}
+
+.info-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.contact-info-item {
+  transition: all 0.3s ease;
+}
+
+.contact-info-item:hover {
+  transform: translateY(-3px);
+}
+
+.social-link {
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(25, 135, 84, 0.1);
+  color: #198754;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: #198754;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(25, 135, 84, 0.3);
+}
+
+.quick-contact-card {
+  border-left: 4px solid #198754;
+}
+
+.map-frame {
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+.map-frame:hover {
+  filter: grayscale(0%);
+}
+
+/* Form Stilleri */
+.form-control-glass {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+}
+
+.form-control-glass:focus {
+  background: rgba(255, 255, 255, 1);
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.15);
+}
+
+.form-control-glass::placeholder {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+textarea.form-control-glass {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, #198754, #16694a);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(135deg, #16694a, #198754);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(25, 135, 84, 0.3);
+}
+
+.btn-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Alert Stilleri */
+.alert {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.alert-success {
+  background: rgba(25, 135, 84, 0.1);
+  color: #198754;
+}
+
+.alert-danger {
+  background: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+/* CTA Kartı */
+.contact-page .cta-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Düzenlemeler */
+@media (max-width: 768px) {
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  .quick-contact-card .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .social-link {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+/* Loading Spinner Özelleştirme */
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.15em;
+}
+
+/* Smooth Scroll for Form Link */
+html {
+  scroll-behavior: smooth;
 }

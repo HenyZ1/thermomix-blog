@@ -37,7 +37,7 @@ export default async function ProductsPage() {
   return (
     <>
       {/* Sayfa Başlığı */}
-      <div className="text-center mb-5">
+      <div className="product_title_top text-center ">
         <h1 className="display-5 fw-bold mb-3">Thermomix Ürünleri</h1>
         <p className="lead text-muted mx-auto" style={{ maxWidth: '700px' }}>
           Mutfağınızı dönüştürecek Thermomix ürünleri ve aksesuarları ile tanışın.
@@ -53,12 +53,6 @@ export default async function ProductsPage() {
             </Button>
             <Button variant="light" className="category-btn">
               Thermomix
-            </Button>
-            <Button variant="light" className="category-btn">
-              Aksesuarlar
-            </Button>
-            <Button variant="light" className="category-btn">
-              Yedek Parçalar
             </Button>
           </div>
         </Container>
@@ -89,7 +83,7 @@ export default async function ProductsPage() {
         </p>
         <div className="d-flex flex-column flex-md-row justify-content-center gap-3">
           <Button 
-            href="/İletişim" 
+            href="/iletisim" 
             variant="success" 
             size="lg"
             className="px-4 py-3 fw-semibold rounded-pill"
