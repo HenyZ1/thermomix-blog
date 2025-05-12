@@ -1,5 +1,4 @@
 // src/app/Urunler/[slug]/page.tsx
-"use client";
 import Link from 'next/link';
 import { getProductBySlug } from '@/lib/sanity';
 import { notFound } from 'next/navigation';
@@ -48,6 +47,7 @@ export default async function ProductDetailPage({ params }: Params) {
         <Col lg={6} className="mb-4 mb-lg-0">
           {/* Ana Görsel */}
           <div className="glass-card position-relative mb-4" style={{ height: '400px' }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={product.image?.url || '/images/Thermo_Logo.png'}
               alt={product.title}
@@ -66,6 +66,7 @@ export default async function ProductDetailPage({ params }: Params) {
               {product.galleryImages.map((image: ProductImage, index: number) => (
                 <Col key={index} xs={4}>
                   <div className="glass-card position-relative" style={{ height: '120px' }}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={image.url}
                       alt={`${product.title} ${index + 1}`}
