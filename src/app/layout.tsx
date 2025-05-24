@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     default: 'Thermo Lezzet Türkiye | Resmi Satış Danışmanı - Ayşen Yılmaz',
     template: '%s | Thermo Lezzet Türkiye'
   },
-  description: 'Thermomix TM6 resmi satış danışmanı Ayşen Yılmaz. Mutfağınızın yeni yıldızı Thermomix ile tanışın. Ücretsiz demo, uygun fiyat ve taksit seçenekleri. İstanbul\'da hizmet vermekteyiz.',
+  description: 'Thermomix TM6 resmi satış danışmanı Ayşen Yılmaz. Mutfağınızın yeni yıldızı Thermomix ile tanışın. Uygun fiyat ve taksit seçenekleri. Manisa\'da hizmet vermekteyiz.',
   
   // Anahtar kelimeler - SEO için önemli
   keywords: [
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'tr_TR',
-    siteName: 'Thermo Lezzet | Resmi Satış Danışmanı',
-    title: 'Thermo Lezzet  | Resmi Satış Danışmanı',
-    description: 'Mutfağınızın yeni yıldızı Thermomix TM6 ile tanışın. Ücretsiz demo ve uygun fiyat seçenekleri.',
+    siteName: 'Thermo Lezzet | Ayşen Yılmaz | Resmi Satış Danışmanı  ',
+    title: 'Thermo Lezzet  | Ayşen Yılmaz  | Resmi Satış Danışmanı ',
+    description: 'Mutfağınızın yeni yıldızı Thermomix TM6 ile tanışın. Uygun fiyat seçenekleri.',
     images: [
       {
         url: '/images/thermomix-og-image.jpg',
@@ -67,8 +67,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@thermomixtr',
     creator: '@aysenyilmaz',
-    title: 'Thermo Lezzet | Resmi Satış Danışmanı',
-    description: 'Mutfağınızın yeni yıldızı Thermomix TM6 ile tanışın. Ücretsiz demo ve uygun fiyat seçenekleri.',
+    title: 'Thermo Lezzet  | Ayşen Yılmaz  | Resmi Satış Danışmanı',
+    description: 'Mutfağınızın yeni yıldızı Thermomix TM6 ile tanışın. Uygun fiyat seçenekleri.',
     images: ['/images/thermomix-twitter-card.jpg'],
   },
   
