@@ -18,7 +18,7 @@ interface Product {
 }
 
 export const metadata = {
-  title: 'Ürünler | Thermomix Türkiye',
+  title: 'Ürünler | Thermo Lezzet Türkiye',
   description: 'Thermomix mutfak robotları ve aksesuarları',
 };
 

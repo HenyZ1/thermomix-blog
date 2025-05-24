@@ -14,12 +14,12 @@ export async function generateMetadata({ params }: Params) {
   
   if (!post) {
     return {
-      title: 'Blog Yazısı Bulunamadı | Thermomix Türkiye',
+      title: 'Blog Yazısı Bulunamadı | Thermo Lezzet Türkiye',
     };
   }
   
   return {
-    title: `${post.title} | Thermomix Türkiye Blog`,
+    title: `${post.title} | Thermo Lezzet Türkiye Blog`,
     description: post.excerpt || post.title,
   };
 }

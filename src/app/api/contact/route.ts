@@ -1,8 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-// E-mail ayarları - buraya kendi email adresinizi yazın
-const RECEIVER_EMAIL = 'info@thermomixturkiye.com'; // SİZİN EMAIL ADRESİNİZ
+const RECEIVER_EMAIL = 'bahadrefeylmaz4@gmail.com'; 
 const SENDER_EMAIL = process.env.SMTP_USER || 'your-email@gmail.com';
 const SENDER_PASSWORD = process.env.SMTP_PASSWORD || 'your-app-password';
 

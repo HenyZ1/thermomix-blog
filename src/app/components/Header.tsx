@@ -47,7 +47,7 @@ export default function Header() {
             <div className="blob-shape position-absolute" 
                  style={{width: '70px', height: '70px', top: '-5px', left: '-5px', opacity: '0.5'}}></div>
           </div>
-          <span className="fw-bold ms-2 text-gradient">Thermomix Türkiye</span>
+          <span className="fw-bold ms-2 text-gradient">Thermo Lezzet Türkiye</span>
         </Navbar.Brand>
         
         <Navbar.Toggle 

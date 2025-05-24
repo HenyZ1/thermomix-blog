@@ -35,7 +35,7 @@ export default function Footer() {
               <div className="feature-icon bg-gradient-primary text-white rounded-3 me-3 d-flex align-items-center justify-content-center" style={{width: '50px', height: '50px'}}>
                 <i className="bi bi-house-heart"></i>
               </div>
-              <h3 className="h5 fw-bold mb-0 text-gradient">Thermomix Türkiye</h3>
+              <h3 className="h5 fw-bold mb-0 text-gradient">Thermo Lezzet Türkiye</h3>
             </div>
             <p className="mb-4">
               Thermomix, mutfaktaki iş yükünüzü azaltan, zamandan tasarruf ettiren ve sağlıklı yemekler hazırlamanıza 
@@ -124,7 +124,7 @@ export default function Footer() {
         </Row>
         
         <div className="text-center mt-5 pt-4 border-top">
-          <p className="mb-0">&copy; {new Date().getFullYear()} Thermomix Türkiye. Tüm hakları saklıdır.</p>
+          <p className="mb-0">&copy; {new Date().getFullYear()} Thermo Lezzet Türkiye. Tüm hakları saklıdır.</p>
           <p className="mb-0 ">Designed By <a target='blank' className='text-primary' href="https://www.linkedin.com/in/bahad%C4%B1r-y%C4%B1lmaz-a45851222/">Bahadır Efe Yılmaz</a></p> 
         </div>
       </Container>

@@ -7,7 +7,7 @@ import { getLatestPosts } from '@/lib/sanity'; // Sanity client'tan getLatestPos
 
 // Ana sayfa için metadata tanımlayalım
 export const metadata = {
-  title: 'Thermomix Türkiye - Mutfağınızın Yeni Teknolojisi',
+  title: 'Thermo Lezzet Türkiye - Mutfağınızın Yeni Teknolojisi',
   description: 'Thermomix ile mutfakta geçirdiğiniz zamanı keyifli ve verimli hale getirin.',
 };
 
@@ -61,6 +61,7 @@ export default async function Home() {
                       ))}
                     </div>
                     <p className="mb-0 small"><span className="fw-semibold">500+</span> mutlu müşteri</p>
+                    <p className="mb-0  mt-2"><span className="fw-semibold">Danışman ID:</span> <span className='fw-bold text-success'>TM0908</span></p>
                   </div>
                 </div>
               </div>

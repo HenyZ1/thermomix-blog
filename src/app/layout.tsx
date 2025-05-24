@@ -14,8 +14,8 @@ export const metadata: Metadata = {
   
   // Temel bilgiler
   title: {
-    default: 'Thermomix Türkiye | Resmi Satış Danışmanı - Ayşen Yılmaz',
-    template: '%s | Thermomix Türkiye'
+    default: 'Thermo Lezzet Türkiye | Resmi Satış Danışmanı - Ayşen Yılmaz',
+    template: '%s | Thermo Lezzet Türkiye'
   },
   description: 'Thermomix TM6 resmi satış danışmanı Ayşen Yılmaz. Mutfağınızın yeni yıldızı Thermomix ile tanışın. Ücretsiz demo, uygun fiyat ve taksit seçenekleri. İstanbul\'da hizmet vermekteyiz.',
   
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   // Yazar bilgisi
   authors: [{ name: 'Ayşen Yılmaz' }],
   creator: 'Ayşen Yılmaz',
-  publisher: 'Thermomix Türkiye',
+  publisher: 'Thermo Lezzet',
   
   // Robot ayarları
   robots: {
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'tr_TR',
-    siteName: 'Thermomix Türkiye',
-    title: 'Thermomix Türkiye | Resmi Satış Danışmanı',
+    siteName: 'Thermo Lezzet | Resmi Satış Danışmanı',
+    title: 'Thermo Lezzet  | Resmi Satış Danışmanı',
     description: 'Mutfağınızın yeni yıldızı Thermomix TM6 ile tanışın. Ücretsiz demo ve uygun fiyat seçenekleri.',
     images: [
       {
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@thermomixtr',
     creator: '@aysenyilmaz',
-    title: 'Thermomix Türkiye | Resmi Satış Danışmanı',
+    title: 'Thermo Lezzet | Resmi Satış Danışmanı',
     description: 'Mutfağınızın yeni yıldızı Thermomix TM6 ile tanışın. Ücretsiz demo ve uygun fiyat seçenekleri.',
     images: ['/images/thermomix-twitter-card.jpg'],
   },
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'Thermomix Türkiye - Ayşen Yılmaz',
+  name: 'Thermo Lezzet - Ayşen Yılmaz',
   description: 'Thermomix TM6 resmi satış danışmanı',
   url: 'https://thermomixturkiye.com',
   telephone: '+905062940969',
@@ -144,16 +144,54 @@ export default function RootLayout({ children }: RootLayoutProps) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        
+
         {/* Ek font ve stil optimizasyonları */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
+        {/* Favicon ve Uygulama İkonları */}
+        <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icons/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" href="/icons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" href="/icons/favicon-96x96.png" sizes="96x96" />
         
-        {/* Favicon ve app ikonları */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
+        {/* Apple Touch Icon'lar (farklı boyutlar için) */}
+        <link rel="apple-touch-icon" href="/icons/apple-icon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png" />
+        <link rel="apple-touch-icon-precomposed" href="/icons/apple-icon-precomposed.png" />
+        
+        {/* Android ve PWA İkonları */}
+        <link rel="icon" sizes="36x36" href="/icons/android-icon-36x36.png" />
+        <link rel="icon" sizes="48x48" href="/icons/android-icon-48x48.png" />
+        <link rel="icon" sizes="72x72" href="/icons/android-icon-72x72.png" />
+        <link rel="icon" sizes="96x96" href="/icons/android-icon-96x96.png" />
+        <link rel="icon" sizes="144x144" href="/icons/android-icon-144x144.png" />
+        <link rel="icon" sizes="192x192" href="/icons/android-icon-192x192.png" />
+        
+        {/* Microsoft İkonları (Windows PWA desteği) */}
+        <link rel="icon" sizes="70x70" href="/icons/ms-icon-70x70.png" />
+        <link rel="icon" sizes="150x150" href="/icons/ms-icon-150x150.png" />
+        <link rel="icon" sizes="310x310" href="/icons/ms-icon-310x310.png" />
+        
+        {/* PWA Manifest */}
+        <link rel="manifest" href="/icons/manifest.json" />
+        
+        {/* Browserconfig.xml (IE ve Microsoft PWA için) */}
+        <meta name="msapplication-config" content="/icons/browserconfig.xml" />
+        
+        {/* PWA için ek meta tag'lar */}
+        <meta name="theme-color" content="#198754" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="mobile-web-app-capable" content="yes" />
       </head>
       <body className="d-flex flex-column min-vh-100">
         <Header />

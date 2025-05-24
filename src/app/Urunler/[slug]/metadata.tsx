@@ -17,12 +17,12 @@ export async function generateMetadata({ params }: Params) {
   
   if (!product) {
     return {
-      title: 'Ürün Bulunamadı | Thermomix Türkiye',
+      title: 'Ürün Bulunamadı | Thermo Lezzet Türkiye',
     };
   }
   
   return {
-    title: `${product.title} | Thermomix Türkiye`,
+    title: `${product.title} | Thermo Lezzet Türkiye`,
     description: product.description,
   };
 }

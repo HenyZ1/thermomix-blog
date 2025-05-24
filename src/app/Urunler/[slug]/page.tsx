@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { getProductBySlug } from '@/lib/sanity';
 import { notFound } from 'next/navigation';
 import PhoneWidget from '@/app/components/PhoneWidget';
-import { Row, Col, Button, ListGroup } from 'react-bootstrap';
+import { Row, Col, Button, ListGroup, ListGroupItem } from 'react-bootstrap';
 
 // Tip tanımlamaları
 interface Params {
@@ -122,14 +122,14 @@ export default async function ProductDetailPage({ params }: Params) {
                 <h2 className="h4 fw-bold mb-3">Öne Çıkan Özellikler</h2>
                 <ListGroup variant="flush" className="glass">
                   {product.features.map((feature: string, index: number) => (
-                    <ListGroup.Item key={index} className="border-0 bg-transparent ps-0">
+                    <ListGroupItem key={index} className="border-0 bg-transparent ps-0">
                       <div className="d-flex align-items-start">
                         <span className="text-success me-2">
                           <i className="bi bi-check-circle-fill"></i>
                         </span>
                         <span>{feature}</span>
                       </div>
-                    </ListGroup.Item>
+                    </ListGroupItem>
                   ))}
                 </ListGroup>
               </div>
@@ -141,13 +141,13 @@ export default async function ProductDetailPage({ params }: Params) {
                 <h2 className="h4 fw-bold mb-3">Teknik Özellikler</h2>
                 <ListGroup variant="flush" className="glass">
                   {product.specs.map((spec: Spec, index: number) => (
-                    <ListGroup.Item 
+                    <ListGroupItem 
                       key={index} 
                       className={`d-flex justify-content-between align-items-center border-0 bg-transparent ${index % 2 === 0 ? 'bg-light bg-opacity-50' : ''}`}
                     >
                       <span className="fw-medium">{spec.name}</span>
                       <span className="text-muted">{spec.value}</span>
-                    </ListGroup.Item>
+                    </ListGroupItem>
                   ))}
                 </ListGroup>
               </div>

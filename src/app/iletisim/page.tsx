@@ -3,8 +3,8 @@ import PhoneWidget from '../components/PhoneWidget';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
 export const metadata = {
-  title: 'İletişim | Thermomix Türkiye',
-  description: 'Thermomix Türkiye ile iletişime geçin',
+  title: 'İletişim | Thermo Lezzet Türkiye',
+  description: 'Thermo Lezzet - Ayşen Yılmaz ile iletişime geçin',
 };
 
 export default function ContactPage() {
@@ -97,7 +97,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="h6 fw-bold mb-1">E-Posta</h3>
                       <p className="mb-0">
-                        <a href="mailto:info@thermomixturkiye.com" className="text-success text-decoration-none fw-semibold">bahadrefeylmaz4@gmail.com</a>
+                        <a href="mailto:bahadrefeylmaz4@gmail.com" className="text-success text-decoration-none fw-semibold">bahadrefeylmaz4@gmail.com</a>
                       </p>
                     </div>
                   </div>
