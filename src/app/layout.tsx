@@ -92,15 +92,15 @@ const jsonLd = {
   '@type': 'LocalBusiness',
   name: 'Thermo Lezzet - Ayşen Yılmaz',
   description: 'Thermomix TM6 resmi satış danışmanı',
-  url: 'https://thermomixturkiye.com',
+  url: 'https://thermolezzet.com',
   telephone: '+905062940969',
-  email: 'info@thermomixturkiye.com',
+  email: 'bahadrefelymaz4@gmail.com',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Ataşehir İş Merkezi, D:10-11-12',
-    addressLocality: 'Ataşehir',
-    addressRegion: 'İstanbul',
-    postalCode: '34758',
+    streetAddress: 'Manisa, Türkiye',
+    addressLocality: 'Manisa',
+    addressRegion: 'Türkiye',
+    postalCode: '45000',
     addressCountry: 'TR'
   },
   geo: {
