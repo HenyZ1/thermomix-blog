@@ -10,7 +10,7 @@ import type { Metadata } from 'next';
 // Sitenin detaylı metadata ayarları
 export const metadata: Metadata = {
   // Site URL ayarı (deploy sonrası güncellenmeli)
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://thermolezzet.com'),
   
   // Temel bilgiler
   title: {
